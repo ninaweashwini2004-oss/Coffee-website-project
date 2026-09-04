@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean & Brew Coffee Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Bean & Brew
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+
+            <span id="cart-count">0</span>
+
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">WELCOME TO BEAN & BREW</p>
+
+        <h1>
+            Fresh Coffee,
+            <span>Happy Moments</span>
+        </h1>
+
+        <p>
+            Enjoy freshly brewed coffee made with love.
+            Relax, refresh and enjoy your favorite cup.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn">
+                View Menu
+            </a>
+
+            <a href="#contact" class="btn-outline">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img src="images\shop.jpg"
+             alt="Coffee Shop">
+
+    </div>
+
+    <div class="about-content">
+
+        <p class="section-title">
+            ABOUT US
+        </p>
+
+        <h2>
+            We Make Your Day Better With Coffee
+        </h2>
+
+        <p>
+            Bean & Brew is a cozy coffee shop where quality
+            coffee meets a relaxing atmosphere.
+        </p>
+
+        <p>
+            We use carefully selected coffee beans and prepare
+            every drink with passion.
+        </p>
+
+        <div class="features">
+
+            <div>
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3>Fresh Coffee</h3>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Organic Beans</h3>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-heart"></i>
+                <h3>Made With Love</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu section" id="menu">
+
+    <p class="section-title">OUR MENU</p>
+
+    <h2>Popular Coffee</h2>
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search coffee..."
+        >
+
+        <i class="fa-solid fa-search"></i>
+
+    </div>
+
+
+    <!-- Category Buttons -->
+
+    <div class="categories">
+
+        <button class="category active" data-category="all">
+            All
+        </button>
+
+        <button class="category" data-category="coffee">
+            Coffee
+        </button>
+
+        <button class="category" data-category="tea">
+            Tea
+        </button>
+
+        <button class="category" data-category="dessert">
+            Dessert
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="menu-container">
+
+        <!-- Product 1 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Cappuccino">
+
+            <img src="images\Cappuccino-coffee.jpg"
+                 alt="Cappuccino">
+
+            <div class="product-info">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Rich espresso with steamed milk.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹180
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Cappuccino"
+                            data-price="180">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Latte">
+
+            <img src="images\Café-Latte-coffee.jpg"
+                 alt="Latte">
+
+            <div class="product-info">
+
+                <h3>Café Latte</h3>
+
+                <p>
+                    Smooth espresso with creamy milk.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹160
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Latte"
+                            data-price="160">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 3 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Espresso">
+
+            <img src="images\Espresso-coffee.jpg"
+                 alt="Espresso">
+
+            <div class="product-info">
+
+                <h3>Espresso</h3>
+
+                <p>
+                    Strong and bold classic espresso.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹120
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Espresso"
+                            data-price="120">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 4 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="Green Tea">
+
+            <img src="images\Green-tea.jpg"
+                 alt="Green Tea">
+
+            <div class="product-info">
+
+                <h3>Green Tea</h3>
+
+                <p>
+                    Healthy and refreshing green tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Green Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 5 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Chocolate Cake">
+
+            <img src="images\chocolate-cake.jpg"
+                 alt="Chocolate Cake">
+
+            <div class="product-info">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>
+                    Soft and delicious chocolate cake.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹220
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Chocolate Cake"
+                            data-price="220">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 6 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Americano">
+
+            <img src="images\americano-coffee.jpg"
+                 alt="Americano">
+
+            <div class="product-info">
+
+                <h3>Americano</h3>
+
+                <p>
+                    A smooth and bold coffee made with rich espresso and hot water.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹140
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Americano"
+                            data-price="140">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 7 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Macchiato">
+
+            <img src="images\macchiato.jpg"
+                 alt="Macchiato">
+
+            <div class="product-info">
+
+                <h3>Macchiato</h3>
+
+                <p>
+                     A bold espresso topped with a small amount of creamy steamed milk, creating a rich and smooth coffee experience.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹160
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Macchiato"
+                            data-price="160">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 8 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Black Coffee">
+
+            <img src="images\Black Coffee.jpg"
+                 alt="Black Coffee">
+
+            <div class="product-info">
+
+                <h3>Black Coffee</h3>
+
+                <p>
+                    Strong, smooth, and refreshing coffee made with freshly brewed coffee beans and no milk.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹120
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Black Coffee"
+                            data-price="120">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 9 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Flat White">
+
+            <img src="images\flat white.jpg"
+                 alt="Flat White">
+
+            <div class="product-info">
+
+                <h3>Flat White</h3>
+
+                <p>
+                    A smooth and creamy coffee made with rich espresso and velvety steamed milk, offering a balanced and bold flavor.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹180
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Flat White"
+                            data-price="180">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 10 -->
+
+        <div class="product-card"
+             data-category="coffee"
+             data-name="Frappuccino">
+
+            <img src="images\frappuccino.jpg"
+                 alt="Frappuccino">
+
+            <div class="product-info">
+
+                <h3>Frappuccino</h3>
+
+                <p>
+                    A chilled, creamy coffee blended with ice and milk, topped with smooth whipped cream for a refreshing and indulgent treat.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹220
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Frappuccino"
+                            data-price="220">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 11 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="Black Tea">
+
+            <img src="images\Black Tea.webp"
+                 alt="Black Tea">
+
+            <div class="product-info">
+
+                <h3>Black Tea</h3>
+
+                <p>
+                    Healthy and refreshing Black Tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Black Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 12 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="Oolong Tea">
+
+            <img src="images\Oolong Tea.jpg"
+                 alt="Oolong Tea">
+
+            <div class="product-info">
+
+                <h3>Oolong Tea</h3>
+
+                <p>
+                    Healthy and refreshing Oolong Tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Oolong Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Product 13 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="White Tea">
+
+            <img src="images\White Tea.webp"
+                 alt="White Tea">
+
+            <div class="product-info">
+
+                <h3>White Tea</h3>
+
+                <p>
+                    Healthy and refreshing White Tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="White Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+                <!-- Product 14 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="Yellow Tea">
+
+            <img src="images\yellow tea.jpg"
+                 alt="Yellow Tea">
+
+            <div class="product-info">
+
+                <h3>Yellow Tea</h3>
+
+                <p>
+                    Healthy and refreshing Yellow Tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Yellow Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+                </div>
+        </div>
+
+
+                <!-- Product 15 -->
+
+        <div class="product-card"
+             data-category="tea"
+             data-name="Pu-erh Tea">
+
+            <img src="images\Pu-erh Tea.jpg"
+                 alt="Pu-erh Tea">
+
+            <div class="product-info">
+
+                <h3>Pu-erh Tea</h3>
+
+                <p>
+                    Healthy and refreshing Pu-erh Tea.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹100
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Pu-erh Tea"
+                            data-price="100">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Dessert -->
+
+         <!-- Product 16 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Black Forest Gateau">
+
+            <img src="images\Black Forest Gateau.jpg"
+                 alt="Black Forest Gateau">
+
+            <div class="product-info">
+
+                <h3>Black Forest Gateau</h3>
+
+                <p>
+                    Rich chocolate sponge layered with smooth whipped cream and juicy cherries, finished with chocolate shavings for a classic, indulgent taste.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹650
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Black Forest Gateau"
+                            data-price="650">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+         <!-- Product 17 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Pineapple Cake">
+
+            <img src="images\Pineapple Cake.jpg"
+                 alt="Pineapple Cake">
+
+            <div class="product-info">
+
+                <h3>Pineapple Cake</h3>
+
+                <p>
+                   Soft vanilla sponge layered with creamy whipped cream and juicy pineapple pieces, creating a light, fruity, and refreshing dessert.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹450
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Pineapple Cake"
+                            data-price="450">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+         <!-- Product 18 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Eggless Truffle Cake">
+
+            <img src="images\Eggless Truffle Cake.jpg"
+                 alt="Eggless Truffle Cake">
+
+            <div class="product-info">
+
+                <h3>Eggless Truffle Cake</h3>
+
+                <p>
+                   Moist eggless chocolate sponge layered with rich, smooth chocolate truffle ganache and finished with a glossy chocolate coating.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹675
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Eggless Truffle Cake"
+                            data-price="675">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+         <!-- Product 19 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Fudgy Chocolate">
+
+            <img src="images\Fudgy Chocolate.jpg"
+                 alt="Fudgy Chocolate">
+
+            <div class="product-info">
+
+                <h3>Fudgy Chocolate</h3>
+
+                <p>
+                    Rich, moist chocolate cake with a soft, gooey fudgy center and intense chocolate flavor—perfect for chocolate lovers.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹550
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Fudgy Chocolate"
+                            data-price="550">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+         <!-- Product 20 -->
+
+        <div class="product-card"
+             data-category="dessert"
+             data-name="Strawberry Delight">
+
+            <img src="images\Strawberry Delight.jpg"
+                 alt="Strawberry Delight">
+
+            <div class="product-info">
+
+                <h3>Strawberry Delight</h3>
+
+                <p>
+                    Soft vanilla sponge layered with luscious strawberry cream and sweet strawberry filling, topped with fresh strawberry goodness for a refreshing, fruity taste.
+                </p>
+
+                <div class="product-bottom">
+
+                    <span class="price">
+                        ₹500
+                    </span>
+
+                    <button class="add-cart"
+                            data-name="Strawberry Delight"
+                            data-price="500">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<!--product finish -->
+        </div>
+
+</section>
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer" id="offers">
+
+    <div class="offer-content">
+
+        <p>LIMITED TIME OFFER</p>
+
+        <h2>
+            Buy 2 Coffees & Get 1 Free
+        </h2>
+
+        <p>
+            Visit Bean & Brew today and enjoy our special offer.
+        </p>
+
+        <a href="#menu" class="btn1">
+            Order Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="testimonials section">
+
+    <p class="section-title">
+        TESTIMONIALS
+    </p>
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Amazing coffee and beautiful atmosphere.
+                I really enjoyed my visit!"
+            </p>
+
+            <h3>Priya</h3>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "The cappuccino was delicious.
+                Definitely coming back again."
+            </p>
+
+            <h3>Karan</h3>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Perfect place to work and relax.
+                Highly recommended!"
+            </p>
+
+            <h3>Neha</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <p class="section-title">
+        CONTACT US
+    </p>
+
+    <h2>Get In Touch</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Address</h3>
+
+                <p>
+                    Nagpur, Maharashtra, India
+                </p>
+
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <p>
+                    +91 1234567890
+                </p>
+
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>
+                    hello@beanandbrew.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>
+                <i class="fa-solid fa-mug-hot"></i>
+                Bean & Brew
+            </h2>
+
+            <p>
+                Fresh coffee. Fresh moments.
+            </p>
+
+        </div>
+
+
+        <div class="social">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Bean & Brew. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= CART ================= -->
+
+<div class="cart">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+
+    </div>
+
+    <div id="cart-items">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total:
+            ₹<span id="cart-total">0</span>
+        </h3>
+
+        <button id="checkout" class="btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
